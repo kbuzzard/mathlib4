@@ -30,7 +30,8 @@ suppress_compilation
 
 section MvPolynomial
 
-/-- Mathlib version
+/-
+Mathlib version
 
 Feb 2026
 
@@ -89,7 +90,9 @@ def KaehlerDifferential.mvPolynomialEquiv1 (σ : Type*) :
       · simp only [map_add, *]
       · simp [*]
 
-/-- Type* -> Type t
+/-
+
+Type* -> Type t
 
 Feb 2026
 
@@ -205,7 +208,7 @@ def KaehlerDifferential.mvPolynomialEquiv3 (σ : Type v) :
 
 -- This problem has now totally gone away in July 2026.
 
-/--
+/-
 
 Feb 2026
 [Elab.command] [830145.000000]
@@ -221,7 +224,7 @@ def KaehlerDifferential.mvPolynomialBasis11 (σ) :
 
 -- Remark: 11 was very fast in Feb 2026, but used the very slow mvPolynomialEquiv1
 
-/--
+/-
 
 Feb 2026
 
@@ -238,7 +241,7 @@ def KaehlerDifferential.mvPolynomialBasis12 (σ : Type t) :
 
 -- Remark: in Feb 26 that was bad. Elaboration 2M, typechecking 8M
 
-/--
+/-
 
 Feb 2026
 
@@ -258,7 +261,7 @@ def KaehlerDifferential.mvPolynomialBasis13 (σ : Type v) :
 -- Remark: 13 is very fast in Feb, but uses the very slow mvPolynomialEquiv1.
 -- It is the one of two very fast one which use different universe choices.
 
-/--
+/-
 
 Feb 2026
 
@@ -279,7 +282,7 @@ def KaehlerDifferential.mvPolynomialBasis21 (σ) :
 -- Remark: Feb 2026 the above was another disaster. Elaboration 38M (the worst of the lot).
 -- Ironically this one is using the fastest mvPolynomialEquiv.
 
-/--
+/-
 
 Feb 2026
 
@@ -299,7 +302,7 @@ def KaehlerDifferential.mvPolynomialBasis22 (σ : Type t) :
 -- (the fastest mvPolynomialEquiv)
 -- and remains fast both in typechecking (<0.1M) and elaboration (<1M).
 
-/--
+/-
 
 Feb 2026
 [Elab.command] [1743009.000000]
@@ -317,7 +320,7 @@ def KaehlerDifferential.mvPolynomialBasis23 (σ : Type v) :
 
 -- In Feb the above was horrible typechecking
 
-/--
+/-
 
 Feb 2026
 
@@ -337,7 +340,7 @@ def KaehlerDifferential.mvPolynomialBasis31 (σ) :
 -- 31 above was the other fast one which uses different universe choices. Note
 -- that it uses Equiv3 which had bad elaboration in Feb 2026
 
-/--
+/-
 
 Feb 2026
 
@@ -354,10 +357,7 @@ def KaehlerDifferential.mvPolynomialBasis32 (σ : Type t) :
 
 -- The above was horrible in Feb, now it's fine
 
-set_option trace.profiler.useHeartbeats true in
-set_option trace.profiler true in
-set_option trace.profiler.threshold 1 in
-/--
+/-
 
 Feb 2026
 
